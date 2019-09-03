@@ -13,6 +13,9 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class HomeActivity extends AppCompatActivity {
     Button btnLogout;
+    Button rockButton;
+    Button paperButton;
+    Button scissorsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +23,10 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         btnLogout = findViewById(R.id.button3);
+        rockButton = findViewById(R.id.button4);
+        paperButton = findViewById(R.id.button5);
+        scissorsButton = findViewById(R.id.button6);
+
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,5 +36,17 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(toLogin);
             }
         });
+
+        double randomno = (Math.random()*9) % 3;
+
+        rockButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
+
     }
 }
