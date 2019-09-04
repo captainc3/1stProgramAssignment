@@ -28,7 +28,7 @@ public class HomeActivity extends AppCompatActivity {
         rockButton = findViewById(R.id.button4);
         paperButton = findViewById(R.id.button5);
         scissorsButton = findViewById(R.id.button6);
-
+// This is Warren Waleed edited Stevens home page. awaleed3
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
